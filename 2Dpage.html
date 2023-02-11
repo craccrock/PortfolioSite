@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style2D.css" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/07ff9406ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="fullsection">
+        <nav class="linksbg">
+          <a href="index.html"><img src="/pics/dees2.svg" alt="" /></a>
+          <div class="navlinks" id="navLinks">
+            <i
+              class="fas fa-times"
+              onclick="hideMenu()"
+              style="color: rgb(24, 24, 24)"
+            ></i>
+            <ul>
+              <li><a href="/index.html">HOME</a></li>
+              <li><a href="/2Dpage.html">2D</a></li>
+              <li><a href="/3Dpage.html">3D</a></li>
+            </ul>
+          </div>
+
+          <i
+            class="fas fa-bars"
+            onclick="showMenu()"
+            style="color: rgb(24, 24, 24)"
+          ></i>
+        </nav>
+      </section>
+
+      <div class="container">
+        <div class="heading">
+          <h3 class="dtitle">2D <span>Projects</span></h3>
+        </div>
+        <div class="box">
+          <div class="col1">
+            <img src="2dimages/1.png" alt="Hollow Knight Guy" id="myImg" />
+            <img src="2dimages/2.gif" alt="Busy Bees Animation" id="myImg" />
+            <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01" />
+
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+          </div>
+          <div class="col2">
+            <img src="2dimages/3.gif" alt="Heart Animation" id="myImg" />
+            <img src="2dimages/4.png" alt="Dead Giant" id="myImg" />
+          </div>
+          <div class="col3">
+            <img src="2dimages/5.png" alt="Robot Shop" id="myImg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script5.js"></script>
+    <script src="./modal2D.js"></script>
+  </body>
+</html>

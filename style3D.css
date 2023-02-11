@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(24, 24, 24); */
+}
+@font-face {
+  font-family: "MV";
+  src: url(fonts/Mvdawlatulislam-Z8dJ.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Aovel";
+  src: url(fonts/AovelSansRounded-rdDL.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "MVDAW";
+  src: url(fonts/Mvdawlatulislam-Z8dJ.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "paul";
+  src: url(fonts/Paul-le1V.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "typo";
+  src: url(fonts/Typographica.ttf);
+  font-weight: 100;
+}
+
+body {
+  background: rgb(24, 24, 24);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 40px 20px 0 20px;
+}
+
+.dtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .heading {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.container .heading h3 {
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid;
+  color: white;
+}
+
+.container .heading h3 span {
+  font-weight: 100;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .container .box .col1 {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+} */
+
+.box img {
+  width: 475px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .container .box {
+    flex-direction: column;
+  }
+  .container .box .col1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .box .col2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .box .col3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .body {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .container .heading {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container .heading h3 {
+    font-size: 34px;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.navlinks ul li a {
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+  font-family: "Urbanist", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(24, 24, 24);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+nav.linksbg {
+  /* background-color: #e6d7c8; */
+  background-image: url("Images/bgnavbar.PNG");
+  margin-right: 0px;
+  flex: 2;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.social-menu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fa {
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.6s;
+  color: rgb(14, 14, 25);
+}
+.social-menu ul li .fab {
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.6s;
+  color: rgb(14, 14, 25);
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(182, 181, 181);
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: rgba(88 101 242);
+}
+nav .fas {
+  display: none;
+}
+.col-4 {
+  flex-basis: 20%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+.col-4 h4 {
+  color: rgb(182, 181, 181);
+}
+/* body{
+  min-height: 100vh;
+} */
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .textbox h1 {
+    font-size: 25px;
+  }
+  .textbox p {
+    font-size: 13px;
+  }
+  .navlinks ul li {
+    display: block;
+  }
+  .navlinks {
+    position: absolute;
+    background: hsl(0 0% 100% / 0.3);
+    backdrop-filter: blur(0.5rem);
+    height: 200vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.7s;
+  }
+  nav .fas {
+    display: block;
+    color: rgb(182, 181, 181);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .navlinks ul {
+    padding: 25px;
+  }
+  .wrapper {
+    overflow-x: hidden;
+    position: relative;
+  }
+}
+
+/* 
+MODAL */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+#img01 {
+  width: 65%;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+
+  width: 800px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  #img01 {
+    width: 150%;
+    left: 0%;
+    /* align-self: center; */
+    /* padding-right: 00px; */
+    position: relative;
+    left: 50%;
+    margin-left: -280px;
+  }
+  .modal {
+    overflow-x: hidden;
+    /* display: flex; */
+  }
+
+  .modal-content {
+    /* width: 200%; */
+    overflow-x: hidden;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
